@@ -40,42 +40,34 @@ The input datasets are split into two subsets: a training set and a test set. Ea
 The names of the features are listed in the file features.txt. Additionally, the input contains the file activity_labels.txt which links the class labels with their activity name.
 
 
-### Part 2: Output Variables
+### Part 2: Program Execution and Output Variables
+
+Refer to [README] (https://github.com/kimhawlee/Getting-and-Cleaning-Data/blob/master/README.md) for descriptions on how the script works.
+
+Here are the 16 R objects that were used in the script (in alphabetical order):
+
+Object | Definition
+----------|-----------
+activity_labels | data frame for "activity_labels.txt"
+all_data | data frame for the combination of all training and test datasets, including labels
+all_data2 |data frame that represents tidy dataset, derived from "all_data"  
+data_activity | data frame that combines training and test datasets of "activity" dataset
+data_combined | data frame that combines "subject" and "activity"
+data_features | data frame that combines training and test datasets of "features" dataset
+data_features_names | data frame for "features.txt" 
+data_subject | data frame that combines training and test datasets of "subject" dataset
+extract_features_names | a factor that extracts feature names with mean() and std()
+select_features_names | a character vector for selected features names from "extract_features_names"
+subject_test | data frame for "subject_test.txt"
+subject_train | data frame for "subject_train.txt"
+x_test | data frame for "x_test.txt"
+x_train | data frame for "x_train.txt"
+y_test | data frame for "y_test.txt"
+y_train | data frame for "y_train.txt"
+
+
+All resultant (cleaned) output variables in the output file "tidy_dataset.txt" can be examined in the [output_variables.csv file](https://github.com/kimhawlee/Getting-and-Cleaning-Data/blob/master/output_variables.csv)
 
 
 
-
-Here are the variables (in alphabetical order):
-
-1) activity_labels = data frame for "activity_labels.txt"
-
-2) all_data = data frame for the combination of all training and test datasets, including labels
-
-3) all_data2 = data frame that represents tidy dataset, derived from "all_data"  
-
-4) data_activity = data frame that combines training and test datasets of "activity" dataset
-
-5) data_combined = data frame that combines "subject" and "activity"
-
-6) data_features = data frame that combines training and test datasets of "features" dataset
-
-7) data_features_names = data frame for "features.txt" 
-
-8) data_subject = data frame that combines training and test datasets of "subject" dataset
-
-9) extract_features_names = a factor that extracts feature names with mean() and std()
-
-10) select_features_names = a character vector for selected features names from "extract_features_names"
-
-11) subject_test = data frame for "subject_test.txt"
-
-12) subject_train = data frame for "subject_train.txt"
-
-13) x_test = data frame for "x_test.txt"
-
-14) x_train = data frame for "x_train.txt"
-
-15) y_test = data frame for "y_test.txt"
-
-16) y_train = data frame for "y_train.txt"
 
