@@ -12,6 +12,6 @@
     (d) lastly, a data frame was assigned to all data.
     
 4. Next, it extracts only the measurements on the mean and standard deviation for each measurement.
-5. Then, it Uses descriptive activity names to name the activities in the dataset that was extracted earlier.
+5. Then, it uses descriptive activity names to name the activities in the dataset that was extracted earlier.
 6. Next, it labels the dataset with descriptive variable names.
-7. From the dataset thus far, creates an independent tidy dataset with the average of each variable for each activity and each subject.
+7. Finally, from the dataset created thus far, it creates an independent tidy dataset with the average of each variable for each activity and each subject.
